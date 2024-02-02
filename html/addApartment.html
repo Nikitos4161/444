@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>Сдача квартир</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Ваш логотип</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Главная</a></li>
+          <li><a href="../html/search.html">Поиск</a></li>
+          <li><a href="#add">Добавить квартиру</a></li>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="add" class="add-apartment-section">
+    <div class="container">
+      <h2>Добавьте свою квартиру</h2>
+      <form id="addApartmentForm" enctype="multipart/form-data">
+        <label for="apartmentTitle">Название квартиры:</label>
+        <input type="text" id="apartmentTitle" name="apartmentTitle" required>
+
+        <label for="apartmentDescription">Описание:</label>
+        <textarea id="apartmentDescription" name="apartmentDescription" required></textarea>
+
+        <label for="apartmentLocation">Местоположение:</label>
+        <input type="text" id="apartmentLocation" name="apartmentLocation" required>
+
+        <label for="apartmentPrice">Цена в день:</label>
+        <input type="text" id="apartmentPrice" name="apartmentPrice" required>
+
+        <label for="apartmentPhotos">Фотографии квартиры:</label>
+        <input type="file" id="apartmentPhotos" name="apartmentPhotos[]" multiple accept="image/*">
+
+        <button type="submit" class="btn">Добавить квартиру</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Ваш сайт сдачи квартир</p>
+    </div>
+  </footer>
+
+  <script src="../js/index.js"></script>
+</body>
+</html>
